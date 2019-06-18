@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700i|Titillium+Web:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Titillium Web", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  background: url("../img/back_line.jpg") left top 121px no-repeat,
+    url("../img/back_line.jpg") left bottom 41px no-repeat;
+  background-color: #f5f5f5;
+  color: #333333;
+  font-size: 14px;
+}
+ul li {
+  list-style-type: none;
+}
+main {
+  width: 1000px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 10px #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+main header#top,
+main footer {
+  flex: 0 0 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 10px 30px 30px;
+  border-bottom: 1px solid #c3c1c6;
+}
+main footer {
+  border: none;
+  border-top: 1px solid #c3c1c6;
+  padding: 10px 10px 10px 30px;
+}
+
+main header#top nav {
+  align-self: center;
+  font-size: 18px;
+}
+main footer nav a {
+  margin-left: 10px;
+}
+main footer nav a:after {
+  content: "|";
+  margin-left: 10px;
+}
+main footer nav a:last-child:after {
+  content: "";
+}
+main header#top nav a {
+  color: #333333;
+  text-decoration: none;
+  padding: 2px 20px;
+}
+main header#top nav a.active {
+  border: 1px solid #c3c0c5;
+  border-radius: 5px;
+  background: #e8e7e8;
+}
+main section {
+  width: 700px;
+  padding: 43px 70px 30px 30px;
+}
+main section article header span.datetime {
+  font-size: 14px;
+}
+
+main section article#main_article {
+  margin-bottom: 40px;
+}
+main section article header .title {
+  border: none;
+}
+main section .title {
+  text-transform: uppercase;
+  width: 96%;
+  border-bottom: 1px solid #c3c1c6;
+  font-size: 32px;
+}
+main section .title::after {
+  content: "/";
+  font-weight: bolder;
+}
+main section p {
+  margin: 10px 0;
+}
+main section h4.cit {
+  font-family: Merriweather, "Times New Roman", serif;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 20px 0;
+  padding: 20px 70px;
+  background: url("../img/bar_cit.jpg") center top no-repeat,
+    url("../img/bar_cit.jpg") center bottom no-repeat;
+}
+main section article figure {
+  display: block;
+  float: left;
+  padding-right: 20px;
+}
+main section article figure img {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 6px 2px #ccc;
+}
+main section article figure figcaption {
+  font-size: 12px;
+}
+main section #kontakt div {
+  padding: 10px 10px 0px 160px;
+}
+main section #kontakt div span#error {
+  color: red;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 150px 30px 50px;
+}
+main section form label {
+  text-align: right;
+}
+main section form label#kommentar {
+  display: flex;
+  margin-left: 10px;
+}
+main section form label input,
+main section form label textarea {
+  width: 290px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+  text-indent: 5px;
+  margin: 5px 0 15px 25px;
+  font-family: inherit;
+  border-radius: 5px;
+}
+main section form label textarea {
+  height: 100px;
+}
+main section form label input.button {
+  width: auto;
+  line-height: normal;
+  padding: 5px 20px;
+  float: right;
+  margin-right: 0;
+  text-indent: 0;
+  height: auto;
+}
+main section .to_split {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section .to_split h2.title {
+  flex: 0 0 98%;
+  margin-bottom: 30px;
+}
+main section .to_split ul,
+main section .to_split div {
+  min-width: 300px;
+}
+
+main aside {
+  width: 270px;
+  padding-top: 60px;
+  padding: 30px 40px 0 0;
+}
+main aside h4 {
+  border-bottom: 1px solid #c3c1c6;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+main section a,
+main aside a,
+.pflichtfeld,
+footer a {
+  color: #739024;
+  text-decoration: none;
+}
+
+main aside ul li a::before {
+  content: url("../img/link_before.png");
+  margin: 1px 10px 5px 10px;
+}
+main aside div {
+  margin-top: 30px;
+}
+main aside address {
+  font-style: normal;
+}
+main aside div figure img {
+  width: 100%;
+}
+main aside div figure figcaption {
+  background: #eeeeee;
+  border: 1px solid #c3c1c6;
+  padding: 10px;
+  border-top: none;
+  position: relative;
+  top: -5px;
+}
+main aside a.button,
+.button {
+  display: block;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #54700c;
+  padding: 3px 0px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedab4+0,97ac5d+58,769329+100 */
+  background: #cedab4; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #cedab4 0%,
+    #97ac5d 58%,
+    #769329 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #cedab4 0%,
+    #97ac5d 58%,
+    #769329 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #cedab4 0%,
+    #97ac5d 58%,
+    #769329 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedab4', endColorstr='#769329',GradientType=0 ); /* IE6-9 */
+}
+/* *************************************** */
+@media all and (-ms-high-contrast: none) {
+  main header#top,
+  main footer {
+    flex: 0 0 94%;
+  }
+  *::-ms-backdrop,
+  main header#top,
+  main footer {
+    flex: 0 0 94%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  main,
+  main section {
+    width: 100%;
+  }
+  main aside {
+    display: none;
+  }
+  main section form label#kommentar {
+    margin-left: 80px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  main section {
+    padding: 43px 30px 30px 30px;
+  }
+  main section form {
+    margin: 0;
+  }
+  main section form label input,
+  main section form label textarea {
+    width: 180px;
+  }
+  main section form label#kommentar {
+    margin-left: 30px;
+  }
+  main header nav {
+    min-width: 60px;
+    min-height: 60px;
+    background: url("../img/hamburgermenu.svg") top -10px center / contain no-repeat;
+    display: flex;
+    padding: 30px 20px 20px;
+    box-sizing: border-box;
+  }
+  nav a {
+    display: none;
+  }
+  main header nav:hover {
+    width: 100%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    padding: 0;
+  }
+  main header nav:hover a {
+    display: block;
+    width: 80%;
+  }
+  main section h4.cit {
+    padding: 20px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  main section form label input {
+    width: 170px;
+  }
+}
